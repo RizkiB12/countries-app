@@ -28,7 +28,7 @@ function List() {
       <Toaster />
       {data.countries.map(({ name, native, capital, code, currency, emoji }) => (
         <div key={code} className="col-span-1 flex flex-col bg-white p-4 rounded-lg">
-          <div className="flex justify-start py-2">
+          <div className="flex justify-center py-2">
             <div className="font-semibold">Name:</div>
             <div className="ml-1">{name}</div>
           </div>

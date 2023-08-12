@@ -3,6 +3,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { IoMdListBox } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
+import { AiOutlineSearch } from "react-icons/ai";
 
 function App() {
   return (
@@ -17,7 +18,17 @@ function App() {
             </div>
           </div>
           {/* Navbar End */}
-          <div className="m-10 flex justify-center">
+
+          <div className="justify-self-center">
+            <div className="bg-white p-2 rounded-full">
+              <div className="flex space-x-2 items-center">
+                <AiOutlineSearch className="text-blue-500 opacity-100" />
+                <input className="bg-white outline-none text-sm w-full text-gray-400" type="text" placeholder="Search" />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-5 flex justify-center">
             <List />
           </div>
 
